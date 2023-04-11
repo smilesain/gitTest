@@ -9,5 +9,27 @@
 </head>
 <body>
     <h1>这个是首页</h1>
+    <!-- <img src="images/angel.gif" alt="" id="angel">
+    <script>
+        $(function(){
+            // 获取图片元素
+            const angel = $("#angel");
+            // 1. 定义节流阀
+            let timer = null;
+            // 监听文档的mousemove事件
+            $(document).on("mousemove", function(e){
+                // 3. 判断节流阀是否为空
+                if(timer) return
+                // 设置图片的位置
+                // 2. 开启延迟器
+                timer = setTimeout(function(){
+                    $(angel).css({left:`${e.pageX}px`, top:`${e.pageY}px`});
+                    // console.log("OK");
+                    timer = null;  //  可以执行下一次操作
+                }, 16)
+
+            })
+        })
+    </script> -->
 </body>
 </html>
